@@ -9,10 +9,10 @@ export default function StandOut() {
                     {/* Left Column - Image */}
                     <div className="w-full lg:w-1/2">
                         <div className="relative rounded-2xl overflow-hidden shadow-lg">
-                            <Image 
-                                src="/img 1.jpg" 
-                                width={600} 
-                                height={800} 
+                            <Image
+                                src="/img 1.jpg"
+                                width={600}
+                                height={800}
                                 alt="Green Haven Farm"
                                 className="w-full h-auto object-cover"
                                 priority
