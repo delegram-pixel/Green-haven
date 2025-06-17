@@ -11,7 +11,7 @@ export default function Home() {
     <div className="min-h-screen bg-white">
       <section> <Header /></section>
       <section> <Services /></section>
-      <section> <WhyChooseUs /></section>
+      <section className="bg-[#f0f4f3]"> <WhyChooseUs /></section>
       <section> <Feedback /></section>
       <section className="bg-white"> <StandOut /></section>
       <section> <Footer /></section>
