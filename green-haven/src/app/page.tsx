@@ -9,12 +9,12 @@ import Footer from "./components/footer/page";
 export default function Home() {
   return (
     <div className="min-h-screen bg-white">
-      <section> <Header /></section>
+      <section className="bg-white"> <Header /></section>
       <section> <Services /></section>
       <section className="bg-[#f0f4f3]"> <WhyChooseUs /></section>
       <section> <Feedback /></section>
       <section className="bg-white"> <StandOut /></section>
-      <section> <Footer /></section>
+      <section id="Footer"> <Footer /></section>
 
 
 

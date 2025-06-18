@@ -23,7 +23,7 @@ import Image from "next/image";
                         </button>
                     </div>
 
-                       {/* Left Column - Image */}
+                       {/* Right Column - Image */}
                                         
                                             <div className="relative overflow-hidden">
                                                 <Image 
