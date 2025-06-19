@@ -1,10 +1,14 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter } from 'next/font/google';
 import "./globals.css";
 
+// Load Inter font with display: swap for better performance
 const inter = Inter({
-  subsets: ["latin"],
-  variable: "--font-inter",
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-inter',
+  weight: ['400', '500', '600', '700'],
+  preload: true,
 });
 
 export const metadata: Metadata = {
@@ -18,10 +22,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${inter.variable} font-sans antialiased`}
-      >
+    <html lang="en" className={inter.className}>
+      <body className="min-h-screen bg-background font-sans antialiased">
         {children}
       </body>
     </html>
