@@ -44,7 +44,7 @@ export default function Services() {
         </div>
 
         {/* Overlapping Cards - perfectly overlap bottom edge of main card */}
-        <div className="absolute left-1/2 transform -translate-x-1/2 w-full max-w-6xl px-4 md:px-0 z-20" style={{top:'300px'}}>
+        <div className="absolute left-1/2 transform -translate-x-1/2 w-full max-w-6xl px-4 md:px-0 z-20 md:mb-10" style={{top:'300px'}}>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {services.map((service, index) => (
               <div 

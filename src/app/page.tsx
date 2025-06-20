@@ -10,7 +10,7 @@ export default function Home() {
     <div className="min-h-screen bg-white">
       <section className="bg-white"> <Header /></section>
       <section> <Services /></section>
-      <section className="bg-[#f0f4f3]"> <WhyChooseUs /></section>
+      <section className="bg-[#f0f4f3] md:mt-80 mt-20"> <WhyChooseUs /></section>
       <section> <Feedback /></section>
       <section className="bg-white"> <StandOut /></section>
       <section id="Footer"> <Footer /></section>
