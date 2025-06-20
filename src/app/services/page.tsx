@@ -25,8 +25,8 @@ const services = [
 
 export default function Services() {
   return (
-    <section className="relative bg-white pb-32">
-      <div className="max-w-7xl mx-auto">
+    <section className="relative bg-white pb-32 px-12">
+      <div className="max-w-7xl mx-auto mb-80 ">
         {/* Main Card Section */}
         <div className="relative flex flex-col lg:flex-row rounded-2xl shadow-lg overflow-visible min-h-[360px]" style={{height:'360px'}}> 
           {/* Left (Green) */}
@@ -44,7 +44,7 @@ export default function Services() {
         </div>
 
         {/* Overlapping Cards - perfectly overlap bottom edge of main card */}
-        <div className="absolute left-1/2 transform -translate-x-1/2 w-full max-w-6xl px-4 md:px-0 z-20 md:mb-10" style={{top:'300px'}}>
+        <div className="absolute left-1/2 transform -translate-x-1/2 w-full max-w-6xl mt-10 md:px-0 z-20 md:mb-10 px-12" style={{top:'300px'}}>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {services.map((service, index) => (
               <div 

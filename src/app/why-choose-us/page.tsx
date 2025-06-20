@@ -20,7 +20,7 @@ export default function WhyChooseUs() {
 
                     {/* Image Section */}
                     <div className="w-full lg:w-1/2 order-1 lg:order-2 mb-8 lg:mb-0">
-                        <div className="relative overflow-hidden rounded-xl sm:rounded-2xl shadow-lg">
+                        <div className="relative overflow-hidden rounded-xl sm:rounded-2xl">
                             <Image
                                 src="/fresh-veg-sal.png"
                                 width={600}
