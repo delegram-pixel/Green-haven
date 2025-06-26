@@ -25,10 +25,10 @@ const services = [
 
 export default function Services() {
   return (
-    <section className="relative bg-white pb-32 px-12">
-      <div className="max-w-7xl mx-auto mb-80 ">
+    <section className="relative bg-white pb-32 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto lg:mb-80 mb-40">
         {/* Main Card Section */}
-        <div className="relative flex flex-col lg:flex-row rounded-2xl shadow-lg overflow-visible min-h-[360px]" style={{height:'360px'}}> 
+        <div className="relative flex flex-col lg:flex-row rounded-2xl shadow-lg overflow-visible lg:min-h-[360px] min-h-[400px] lg:min-h-[280px]"> 
           {/* Left (Green) */}
           <div className="bg-[#2c5f4e] text-white flex-1 p-8 md:p-12 flex flex-col justify-center rounded-t-2xl lg:rounded-l-2xl lg:rounded-tr-none">
             <h2 className="text-base md:text-lg tracking-widest mb-2">Green Haven Farm</h2>
@@ -43,14 +43,13 @@ export default function Services() {
           </div>
         </div>
 
-        {/* Overlapping Cards - perfectly overlap bottom edge of main card */}
-        <div className="absolute left-1/2 transform -translate-x-1/2 w-full max-w-6xl mt-10 md:px-0 z-20 md:mb-10 px-12" style={{top:'300px'}}>
+        {/* Service Cards */}
+        <div className="relative lg:absolute left-1/2 transform -translate-x-1/2 w-full max-w-6xl lg:mt-10 mt-6 z-20 px-4 sm:px-6 lg:px-0">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {services.map((service, index) => (
               <div 
                 key={index} 
-                className="bg-white rounded-xl overflow-hidden shadow-lg border border-gray-100 flex flex-col items-center"
-                style={{minHeight:'240px'}}
+                className="bg-white rounded-xl overflow-hidden shadow-lg border border-gray-100 flex flex-col items-center h-full"
               >
                 <div className="h-36 w-full bg-gray-100 relative flex items-center justify-center">
                   <Image 
